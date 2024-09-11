@@ -25,7 +25,7 @@ const Contact = () => {
 
 
 
-    <div className="container mx-auto">
+    <div className="container mx-auto px-5 ">
   
       <form onSubmit={handleSubmit} className="max-w-lg mx-auto">
         <div className="mb-4">
