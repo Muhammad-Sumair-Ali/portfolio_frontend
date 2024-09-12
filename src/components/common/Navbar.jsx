@@ -18,12 +18,12 @@ const Navbar = () => {
           </span>
         </a>
         <div className="flex items-center lg:order-2">
-          <button
-            href="#"
+          <a target="blank"
+            href="https://drive.google.com/file/d/1gX4ZfRaEVGIv-WOE1gdXf790i492kTCR/view?usp=sharing"
             className="text-white bg-purple-700 hover:bg-purple-800  focus:ring-purple-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800"
           >
             Download Cv
-          </button> 
+          </a> 
 
           <DarkModeToggle/>
           <button
