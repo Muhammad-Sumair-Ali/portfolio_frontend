@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="bg-white dark:bg-black dark:text-white flex flex-col justify-center items-center pb-8  "
+      className="bg-white dark:bg-black dark:text-white flex flex-col justify-center items-center pb-8 scroll-smooth "
     >
       <h1 className="text-center text-4xl font-bold">
         My Recent{" "}

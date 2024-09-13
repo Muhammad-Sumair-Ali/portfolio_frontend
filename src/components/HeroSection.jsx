@@ -5,7 +5,10 @@ import "../assets/Hero.css";
 
 const Hero = () => {
   return (
-    <section id="home" className="bg-white dark:bg-black dark:text-white flex justify-center">
+    <section
+      id="home"
+      className="bg-white dark:bg-black dark:text-white flex justify-center scroll-smooth"
+    >
       <div className=" mt-6 md:mt-4 p-5 md:p-1 w-full md:w-5/6  h-4/5 flex items-center  md:flex-row flex-col align-center justify-center gap-4">
         <div className="w-full m-4 px-2 py-2">
           <h1 className="mb-3 text-2xl flex flex-wrap gap-1 ">
@@ -18,23 +21,24 @@ const Hero = () => {
             </p>{" "}
           </h1>
           <p className="text-md mb-4">
-          Web Developer | Expert MERN Stack with 1+ Years of Experience
+            Web Developer | Expert MERN Stack with 1+ Years of Experience
           </p>
 
-          <ul class="example-2 mb-4">
-            <li class="icon-content">
+          <ul className="example-2 mb-4">
+            <li className="icon-content">
               <a
-                href="https://linkedin.com/"
+                target="blank"
+                href="https://www.linkedin.com/in/muhammad-sumair-b60a91301"
                 aria-label="LinkedIn"
                 data-social="linkedin"
               >
-                <div class="filled"></div>
+                <div className="filled"></div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
                   height="16"
                   fill="currentColor"
-                  class="bi bi-linkedin"
+                  className="bi bi-linkedin"
                   viewBox="0 0 16 16"
                   xml:space="preserve"
                 >
@@ -44,21 +48,22 @@ const Hero = () => {
                   ></path>
                 </svg>
               </a>
-              <div class="tooltip">LinkedIn</div>
+              <div className="tooltip">LinkedIn</div>
             </li>
-            <li class="icon-content">
+            <li className="icon-content">
               <a
-                href="https://www.github.com/"
+                target="blank"
+                href="https://github.com/Muhammad-Sumair-Ali"
                 aria-label="GitHub"
                 data-social="github"
               >
-                <div class="filled"></div>
+                <div className="filled"></div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
                   height="16"
                   fill="currentColor"
-                  class="bi bi-github"
+                  className="bi bi-github"
                   viewBox="0 0 16 16"
                   xml:space="preserve"
                 >
@@ -68,21 +73,22 @@ const Hero = () => {
                   ></path>
                 </svg>
               </a>
-              <div class="tooltip">GitHub</div>
+              <div className="tooltip">GitHub</div>
             </li>
-            <li class="icon-content">
+            <li className="icon-content">
               <a
-                href="https://www.instagram.com/"
+                target="blank"
+                href="https://www.instagram.com/muhammadsumair607"
                 aria-label="Instagram"
                 data-social="instagram"
               >
-                <div class="filled"></div>
+                <div className="filled"></div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
                   height="16"
                   fill="currentColor"
-                  class="bi bi-instagram"
+                  className="bi bi-instagram"
                   viewBox="0 0 16 16"
                   xml:space="preserve"
                 >
@@ -92,37 +98,41 @@ const Hero = () => {
                   ></path>
                 </svg>
               </a>
-              <div class="tooltip">Instagram</div>
+              <div className="tooltip">Instagram</div>
             </li>
-            <li class="icon-content">
-              <a
-                href="https://youtube.com/"
-                aria-label="Youtube"
-                data-social="youtube"
+            <li className="icon-content">
+              <a target="blank" 
+                href="https://www.facebook.com/m.sumair.jatoi"
+                aria-label="facebook"
+                data-social="facebook"
               >
-                <div class="filled"></div>
+                <div className="filled"></div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
                   height="16"
                   fill="currentColor"
-                  class="bi bi-youtube"
-                  viewBox="0 0 16 16"
-                  xml:space="preserve"
+                  className="bi bi-facebook"
+                  viewBox="0 0 24 24"
                 >
-                  <path
-                    d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"
-                    fill="currentColor"
-                  ></path>
+                  <path d="M22.675 0H1.325C.593 0 0 .593 0 1.326v21.348C0 23.407.593 24 1.325 24h11.495V14.708H9.692v-3.632h3.128V8.662c0-3.1 1.894-4.785 4.659-4.785 1.325 0 2.464.099 2.795.143v3.24h-1.918c-1.504 0-1.795.715-1.795 1.763v2.31h3.587l-.467 3.632h-3.12V24h6.115C23.407 24 24 23.407 24 22.674V1.326C24 .593 23.407 0 22.675 0z" />
                 </svg>
               </a>
-              <div class="tooltip">Youtube</div>
+              <div className="tooltip">facebook</div>
             </li>
           </ul>
         </div>
         <div className="w-full heroImage">
-          <img className="h-96 m-auto dark:hidden" src={HeroImage} alt="don't copy" />
-          <img className="h-96 m-auto hidden   dark:block" src={HeroImageDark} alt="don't copy" />
+          <img
+            className="h-96 m-auto dark:hidden"
+            src={HeroImage}
+            alt="don't copy"
+          />
+          <img
+            className="h-96 m-auto hidden  dark:block"
+            src={HeroImageDark}
+            alt="don't copy"
+          />
         </div>
       </div>
     </section>

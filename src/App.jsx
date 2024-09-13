@@ -6,12 +6,13 @@ import {
   Hero,
   Skills,
   Projects, } from "./components";
+import ScrollButton from './components/features/ScrollButton';
 
 
 
 
 const App = () => (
-  <div>
+  <div className='scroll-smooth'>
     <Navbar/>
       <Hero />
       <About />
@@ -19,6 +20,7 @@ const App = () => (
       <Projects/>
       <Contact/>
       <Footer />
+      <ScrollButton/>
   </div>
 );
 

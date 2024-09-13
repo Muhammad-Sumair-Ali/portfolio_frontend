@@ -86,7 +86,7 @@ const Skills = () => {
    ]
 
   return (
-   <div className="bg-white dark:bg-black dark:text-white flex justify-center items-center flex-col pb-10">
+   <div className="bg-white dark:bg-black dark:text-white flex justify-center items-center flex-col pb-10 scroll-smooth">
      <h1 className="text-center text-4xl font-bold">
         My <span className="text-purple-700">Skills <FaArrowTurnDown className="inline-block text-black dark:text-gray-100" /> </span>
       </h1>

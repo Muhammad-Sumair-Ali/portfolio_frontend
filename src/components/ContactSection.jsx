@@ -12,7 +12,7 @@ const Contact = () => {
   }
 
   return(
-  <section id="contact" className="bg-white dark:bg-black dark:text-white py-10">
+  <section id="contact" className="bg-white dark:bg-black dark:text-white py-10 scroll-smooth">
 
    <h1 className="text-center text-4xl font-bold">
         Contact 
