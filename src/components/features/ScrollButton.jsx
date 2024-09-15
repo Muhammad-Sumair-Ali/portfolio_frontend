@@ -22,7 +22,7 @@ const ScrollButton = () => {
 
   const scrollToTop = () => {
     window.scrollTo({
-      top: 10,
+      top: 0,
       behavior: "smooth"
     });
   };
@@ -30,7 +30,7 @@ const ScrollButton = () => {
   return (
     <>
       {showButton && (
-        <button className="text-white rounded-2xl shadow-xl hover:bg-purple-800  bg-purple-700 p-4 m-2 fixed bottom-4 right-6 z-10" onClick={scrollToTop}>
+        <button className="text-white rounded-2xl shadow-xl hover:bg-purple-800  bg-purple-700 p-3 m-2 fixed bottom-4 right-10 z-10" onClick={scrollToTop}>
          <GoMoveToTop size={38}/>
         </button>
       )}

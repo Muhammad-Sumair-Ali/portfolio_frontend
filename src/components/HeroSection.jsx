@@ -7,10 +7,10 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="bg-white dark:bg-black dark:text-white flex justify-center scroll-smooth"
+      className="bg-white dark:bg-black dark:text-white flex justify-center scroll-smooth overflow-hidden md:mt-7"
     >
       <div className=" mt-6 md:mt-4 p-5 md:p-1 w-full md:w-5/6  h-4/5 flex items-center  md:flex-row flex-col align-center justify-center gap-4">
-        <div className="w-full m-4 px-2 py-2">
+        <div  data-aos="fade-right" data-aos-anchor-placement="top-center" className=" overflow-hidden w-full m-4 px-2 py-2">
           <h1 className="mb-3 text-2xl flex flex-wrap gap-1 ">
             <img className="h-8 w-8" src={Hey} alt="Hi" /> HELLO, I’M{" "}
             <span className="text-purple-600 text-5xl -mt-1 font-bold">
@@ -122,7 +122,9 @@ const Hero = () => {
             </li>
           </ul>
         </div>
-        <div className="w-full heroImage">
+
+
+        <div className="overflow-hidden w-full heroImage" data-aos="fade-up-left" >
           <img
             className="h-96 m-auto dark:hidden"
             src={HeroImage}
@@ -140,4 +142,3 @@ const Hero = () => {
 };
 
 export default Hero;
-//

@@ -7,12 +7,17 @@ import {
   Skills,
   Projects, } from "./components";
 import ScrollButton from './components/features/ScrollButton';
+import { useEffect } from 'react';
+import AOS from 'aos';
+import CustomCursor from './components/features/Cursor';
 
 
-
-
-const App = () => (
-  <div className='scroll-smooth'>
+const App = () => {
+useEffect(() => {
+  AOS.init()
+},[])
+return (
+  <div>
     <Navbar/>
       <Hero />
       <About />
@@ -21,7 +26,8 @@ const App = () => (
       <Contact/>
       <Footer />
       <ScrollButton/>
+      <CustomCursor/>
   </div>
 );
-
+}
 export default App;

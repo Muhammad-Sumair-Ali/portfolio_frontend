@@ -4,18 +4,17 @@ import App from "./App";
 import AdminDashboard from "./pages/AdminDashboard";
 import "./index.css";
 import { createRoot } from "react-dom/client";
+import 'aos/dist/aos.css';
+
+
+
+
+
 
 createRoot(document.getElementById("root")).render(
   <Router>
     <Routes>
-      <Route
-        path="*"
-        element={
-          <>
-            <h2>Not Found Page</h2>
-          </>
-        }
-      />
+      <Route path="*" element={<> <h2>Not Found Page</h2></>}/>
       <Route path="/" element={<App />} />
       <Route path="/admin" element={<AdminDashboard />} />
     </Routes>

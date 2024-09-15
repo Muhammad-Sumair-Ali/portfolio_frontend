@@ -27,7 +27,7 @@ const Contact = () => {
 
     <div className="container mx-auto px-5 ">
   
-      <form onSubmit={handleSubmit} className="max-w-lg mx-auto">
+      <form data-aos="fade-up" onSubmit={handleSubmit} className="max-w-lg mx-auto">
         <div className="mb-4">
           <label className="block text-gray-700 dark:text-gray-300 mb-2" htmlFor="name">
             Name

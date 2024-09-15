@@ -12,6 +12,7 @@
   "dependencies": {
     "@ant-design/icons": "^5.4.0",
     "antd": "^5.20.3",
+    "aos": "^2.3.4",
     "axios": "^1.7.7",
     "rc-queue-anim": "^2.0.0",
     "rc-tween-one": "^3.0.6",

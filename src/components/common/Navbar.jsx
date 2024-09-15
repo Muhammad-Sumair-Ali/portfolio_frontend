@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white border-gray-200 py-2.5 dark:bg-gray-900">
+    <nav className="bg-white border-gray-200 py-2.5 dark:bg-gray-900 overflow-hidden">
       <div className="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto shadow-md pb-2 dark:pb-0">
         <a className="flex items-center">
          

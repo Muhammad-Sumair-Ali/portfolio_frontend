@@ -21,7 +21,7 @@ const Projects = () => {
       <div className="flex-wrap mt-7 md:mt-10 p-2 md:p-2 w-full gap-5 md:w-5/6 flex items-center justify-center  md:flex-row flex-col">
         {ProjectsData.map((project, id) => {
           return (
-            <div key={id} className="group relative overflow-hidden w-full md:w-72 mb-2 shadow-lg shadow-gray-800 rounded-lg md:rounded-xl  p-1 md:p-0 border-purple-800 border-solid dark:border-4">
+            <div data-aos="zoom-in-up" key={id} className="group relative overflow-hidden w-full md:w-72 mb-2 shadow-lg shadow-gray-800 rounded-lg md:rounded-xl  p-1 md:p-0 border-purple-800 border-solid dark:border-4">
               <img
                 src={project.image}
                 loading="lazy"
@@ -35,13 +35,20 @@ const Projects = () => {
                 </p>
                 <p className="text-gray-100 text-sm mb-4 text-center"><b>{project.description}</b></p>
                 <div className="flex space-x-2 ">
-                  <a
+                {project.demo === "" ? <a
+                    disabled
+                    target="_blank"
+                    className="px-4 py-2 bg-gray-700 text-white  rounded hover:bg-gray-600"
+                  >
+                   Not Found  
+                  </a> : <a
                     href={project.demo}
                     target="_blank"
                     className="px-4 py-2 bg-gray-700 text-white  rounded hover:bg-gray-600"
                   >
-                    Live Demo
-                  </a>
+                   Live Demo
+                  </a>}  
+                 
                   <a
                     href={project.code}
                     target="_blank"

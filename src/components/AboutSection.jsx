@@ -13,11 +13,12 @@ const About = () => {
 
       <section className="flex justify-center">
         <div className="mt-8 md:mt-4 p-5 md:p-0 w-full md:w-5/6  h-4/5 flex items-center  md:flex-row flex-col align-center justify-center gap-4">
-        <div className="w-full ">
+        <div className="overflow-hidden w-full " data-aos="fade-up">
             <img className="h-96 m-auto block dark:hidden"  src={DevImg} alt="you like me.." />
             <img className="h-96 m-auto hidden dark:block"  src={DevImgDark} alt="you like me.." />
           </div> 
-          <div className="w-full m-4 px-2">
+          <div className="w-full m-4 px-2 overflow-hidden" data-aos="fade-up-right"
+     data-aos-anchor-placement="top-center">
             <p className="text-lg mb-4 px-7">
               Hey, I'm{" "}
               <span className="text-purple-700 font-bold dark:text-purple-600 text-xl">Muhammad Sumair</span>
